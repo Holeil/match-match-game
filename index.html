@@ -1,0 +1,41 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <link href="css/style.css" rel="stylesheet">
+  </head>
+  <body>
+     <div class="start-menu" id="start-menu">
+      <h1>MATCH-MATCH-GAME</h1>
+      <div class="rules" id="rules">
+        <h2>How to play: </h2>
+        <ol>
+          <li>Select two cards to try to match the pictures.</li>
+          <li>If you match the pictures you can go again.</li>
+          <li>If they don't match it is the computer turn them.</li>
+          <li>The player that finds all pairs wins!</li>
+          <li>Have Fun!</li>
+        </ol>
+      </div>
+      <form class="start-form" method="get" id="start-form" name="menu">
+        <input type="text" placeholder="First Name" name="first-name-profile" class="start-form-input" id="first-name-profile" required>
+        <input type="text" placeholder="Last Name" name="last-name-profile" class="start-form-input" id="last-name-profile" required>
+        <input type="email" placeholder="Email" name="email-profile" pattern="^[-._a-z0-9]+@(?:[a-z0-9][-a-z0-9]+\.)+[a-z]{2,6}$" class="start-form-input" id="email-profile" required>
+        <div class="wraper-game-level start-form-input">
+          <div class="game-level">Level game:</div>
+          <label><input type="radio" name="game-level" value="6" checked>Облегчённая версия для тебя</label>
+          <label><input type="radio" name="game-level" value="24">24 cards</label>
+          <label><input type="radio" name="game-level" value="30">30 cards</label>
+        </div>
+        <div class="wraper-type-cards start-form-input">
+          <div class="type-cards">Type cards:</div>
+          <label><input type="radio" name="type-cards" value="type-cards-1" checked><div class="card type-cards-1"></div></label>
+          <label><input type="radio" name="type-cards" value="type-cards-2"><div class="card type-cards-2"></div></label>
+          <label><input type="radio" name="type-cards" value="type-cards-3"><div class="card type-cards-3"></div></label>
+        </div>
+        <input type="submit" value="START" class="start-game start-form-input" id="start-game">
+      </form>
+    </div>
+    <script src="js/script.js"></script>
+  </body>
+</html>
